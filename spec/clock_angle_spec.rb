@@ -11,4 +11,7 @@ describe('Array#clock_angle') do
   it("is 24.5 at 1:01") do
     expect([1,1].clock_angle()).to(eq(24.5))
   end
+  it("is 126 at 1:48") do
+    expect([1,48].clock_angle()).to(eq(126))
+  end
 end
